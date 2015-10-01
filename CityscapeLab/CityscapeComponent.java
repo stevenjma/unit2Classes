@@ -1,6 +1,8 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
+import java.util.Random;
+import java.awt.Color;
 
 /**
  * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
@@ -9,8 +11,8 @@ import javax.swing.JComponent;
  * @author @gcschmit
  * @version 18 July 2014
  */
-public class CityscapeComponent extends JComponent
-{
+public class CityscapeComponent extends JComponent{
+
     // define the objects in your Cityscape as instance variables
     // ...
     
@@ -28,10 +30,12 @@ public class CityscapeComponent extends JComponent
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
+
+        Building building1 = new Building(100, 100, 50);
+        Building building2 = new Building(200, 200, 30);
         
-        // invoke the draw method on each object in your Cityscape
-        // ...
-        
+        building1.draw(g2);
+        building2.draw(g2);
         
     }
     
