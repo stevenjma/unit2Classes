@@ -36,7 +36,7 @@ public class Building
         int interval = 0;
         while (count != num)
         {
-            Rectangle body = new Rectangle(this.left, this.bottom + interval, 25, 20);
+            Rectangle body = new Rectangle(this.left, this.bottom + interval, 40, 20);
             g2.setColor(Color.BLACK);
             g2.fill(body);
             g2.setColor(Color.WHITE);
@@ -44,7 +44,7 @@ public class Building
             count += 1;
             interval += 10;
         }
-        Rectangle antenna1 = new Rectangle(this.left + 15, this.bottom - 20, 5, 20);
+        Rectangle antenna1 = new Rectangle(this.left + 30, this.bottom - 20, 5, 20);
         g2.setColor(Color.BLACK);
         g2.fill(antenna1);
         g2.setColor(Color.WHITE);
