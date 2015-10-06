@@ -33,7 +33,8 @@ public class CityscapeComponent extends JComponent{
         Graphics2D g2 = (Graphics2D) g;
         
         Rectangle background = new Rectangle(0, 0, 2000, 750);
-
+        
+        Road road = new Road();
         Building building1 = new Building(250, 100, 50);
         Building building2 = new Building(450, 800, 30);
         Building building3 = new Building(50, 400, 70);
@@ -42,11 +43,13 @@ public class CityscapeComponent extends JComponent{
         Window window = new Window(205, 235, 30);
         Building2 building5 = new Building2(900, 10, 50);
         Window window2 = new Window(905, 10, 45);
+        School school = new School(1200, 500);
         
         g2.setColor(Color.CYAN);
         g2.draw(background);
         g2.fill(background);
         
+        road.draw(g2);
         building1.draw(g2);
         building2.draw(g2);
         building3.draw(g2);
@@ -55,6 +58,7 @@ public class CityscapeComponent extends JComponent{
         window.draw(g2);
         building5.draw(g2);
         window2.draw(g2);
+        school.draw(g2);
         
     }
     
