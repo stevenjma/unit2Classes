@@ -1,4 +1,4 @@
-import java.awt.Graphics;
+    import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
 import java.util.Random;
@@ -36,7 +36,7 @@ public class CityscapeComponent extends JComponent{
         
         Road road = new Road();
         Building building1 = new Building(250, 100, 50);
-        Building building2 = new Building(450, 800, 30);
+        Building building2 = new Building(150, 800, 60);
         Building building3 = new Building(50, 400, 70);
         Sun sun = new Sun(0, 0);
         Building2 building4 = new Building2(200, 235, 35);
@@ -44,6 +44,7 @@ public class CityscapeComponent extends JComponent{
         Building2 building5 = new Building2(900, 10, 50);
         Window window2 = new Window(905, 10, 45);
         School school = new School(1200, 500);
+        Building3 building6 = new Building3(600, 725, 10);
         
         g2.setColor(Color.CYAN);
         g2.draw(background);
@@ -59,6 +60,7 @@ public class CityscapeComponent extends JComponent{
         building5.draw(g2);
         window2.draw(g2);
         school.draw(g2);
+        building6.draw(g2);
         
     }
     
