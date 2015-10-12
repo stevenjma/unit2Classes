@@ -28,7 +28,7 @@ public class Building
     }
 
     /**
-     * Draws the car.
+     * Draws the building.
      * @param    g2 the graphics context
      */
     public void draw(Graphics2D g2)
